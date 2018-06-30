@@ -1,0 +1,92 @@
+macupdater 6.0
+Log:  Sat Jun 30 19:33:55 SAST 2018
+
+
+Brew
+
+Already up-to-date.
+Brew updates complete.
+
+Brew Cask
+
+==> Options
+Include auto-update (-a): true
+Include latest (-f): false
+==> Updating Homebrew
+Already up-to-date.
+==> Finding outdated apps
+       Cask              Current           Latest            A/U    Result    
+ 1/28  adapter           2.1.6             2.1.6                  [   OK   ]  
+ 2/28  android-platf...  28.0.0            28.0.0                 [   OK   ]  
+ 3/28  artpip            latest            latest                 [   OK   ]  
+ 4/28  boom-3d           1.1.4,1527055860  1.1.4,1527055860       [   OK   ]  
+ 5/28  brackets          1.13              1.13                   [   OK   ]  
+ 6/28  carbon-copy-c...  5.1.2.5426        5.1.2.5426         Y   [   OK   ]  
+ 7/28  cheatsheet        1.2.9             1.2.9                  [   OK   ]  
+ 8/28  codekit           3.6.1,26680       3.6.1,26680        Y   [   OK   ]  
+ 9/28  controlplane      1.6.6             1.6.6                  [   OK   ]  
+10/28  cyberduck         6.6.2.28219       6.6.2.28219        Y   [   OK   ]  
+11/28  disk-drill        3.5.890           3.5.890                [   OK   ]  
+12/28  flux              39.987            39.987             Y   [   OK   ]  
+13/28  fork              1.0.67.5          1.0.67.5           Y   [   OK   ]  
+14/28  iina              0.0.15.1          0.0.15.1           Y   [   OK   ]  
+15/28  itsycal           0.11.10           0.11.10                [   OK   ]  
+16/28  knockknock        1.9.3             1.9.3                  [   OK   ]  
+17/28  libreoffice       6.0.5             6.0.5                  [   OK   ]  
+18/28  platypus          5.2               5.2                Y   [   OK   ]  
+19/28  qlcolorcode       2.1.0             2.1.0                  [   OK   ]  
+20/28  qlmarkdown        1.3.5             1.3.5                  [   OK   ]  
+21/28  qlprettypatch     1.0               1.0                    [   OK   ]  
+22/28  qlstephen         1.4.4             1.4.4                  [   OK   ]  
+23/28  quicksilver       1.5.9             1.5.9              Y   [   OK   ]  
+24/28  signal            1.13.0            1.13.0             Y   [   OK   ]  
+25/28  sketchup          2017              2017                   [   OK   ]  
+26/28  transmission      2.94              2.94               Y   [   OK   ]  
+27/28  vivaldi           1.15.1147.47      1.15.1147.47       Y   [   OK   ]  
+28/28  ynab              4.3.855           4.3.855                [   OK   ]  
+==> Removing cached downloads
+Nothing to do
+Brew-cask updates complete.
+
+Node
+
+/Users/gugulethu/homebrew/bin/npm -> /Users/gugulethu/homebrew/lib/node_modules/npm/bin/npm-cli.js
+/Users/gugulethu/homebrew/bin/npx -> /Users/gugulethu/homebrew/lib/node_modules/npm/bin/npx-cli.js
++ npm@6.1.0
+updated 1 package in 18.261s
+up to date in 2.159s
+found 0 vulnerabilities
+
+Node updates complete.
+
+Ruby
+
+Updating rubygems-update
+Updating installed gems
+Updating CFPropertyList
+Cleaning up installed gems...
+Clean Up Complete
+Ruby updates complete.
+
+Perl
+
+no perlbrew environment is currently in use
+Your perlbrew is up-to-date.
+
+Done
+Perl updates complete.
+
+macOS
+
+Software Update Tool
+
+Finding available software
+macOS updates complete.
+
+Apps
+
+Everything is up-to-date
+Apps updates complete.
+
+
+All updates complete. END
