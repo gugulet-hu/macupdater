@@ -1,10 +1,33 @@
 macupdater 6.0
-Log:  Sat Jun 30 19:33:55 SAST 2018
+Log:  Fri Jul 6 13:42:03 SAST 2018
 
 
 Brew
 
-Already up-to-date.
+==> Upgrading 2 outdated packages, with result:
+node 10.5.0_1 -> 10.6.0, imagemagick 7.0.8-3 -> 7.0.8-5
+==> Upgrading node 
+==> Downloading https://nodejs.org/dist/v10.6.0/node-v10.6.0.tar.xz
+Already downloaded: /Users/gugulethu/Library/Caches/Homebrew/node-10.6.0.tar.xz
+==> ./configure --prefix=/Users/gugulethu/homebrew/Cellar/node/10.6.0 --without-npm --with-intl=system-icu
+==> make install
+==> Downloading https://registry.npmjs.org/npm/-/npm-6.1.0.tgz
+Already downloaded: /Users/gugulethu/Library/Caches/Homebrew/node--npm-6.1.0.tgz
+==> node /private/tmp/node-20180706-1571-nc3du8/node-v10.6.0/npm_bootstrap/bin/npm-cli.js install -ddd --global --prefix=/Users/gugulethu/homebrew/Cellar/node/10.6.0/libexec /Users/gugulethu/Library/Caches/Homebrew/node--npm-6.1.0.tgz
+==> Caveats
+Bash completion has been installed to:
+  /Users/gugulethu/homebrew/etc/bash_completion.d
+==> Summary
+🍺  /Users/gugulethu/homebrew/Cellar/node/10.6.0: 6,793 files, 59.9MB, built in 27 minutes 32 seconds
+==> Upgrading imagemagick 
+==> Downloading https://dl.bintray.com/homebrew/mirror/imagemagick-7.0.8-5.tar.xz
+==> Downloading from https://akamai.bintray.com/98/9889f7a95d34c75a46f9b5d890b8b9f8bfe6fa5e201ed0f05839cfc3df5e423e?__gda__=exp=1530879740~hmac=43e8e7e9ba2a58db544a485873e48a143f12e22e287976d2a818d3ecd4684731&response-content-disposition=attachment%3Bfilename%3D%22imagemagick-7.0.8-5.tar.xz%22&response-content-type=application%2Fx-xz&requestInfo=U2FsdGVkX18OanOn3GyOmdBkunbonwXOkqo2EGYAyzJgOpP5_xwoCq4wkIU_jXu_88C03TH9aj9m0Z0BFyrJ2WucIipMbEyZ58xXodkk6jwo4Hc-HgtmBrcnwbn9oXgvA5ZCDSttOgz5FA9GJ_aFuA&response-X-Checksum-Sha1=448d00a3e5cd5184d3df4883edc407e7885cf40c&response-X-Checksum-Sha2=9889f7a95d34c75a46f9b5d890b8b9f8bfe6fa5e201ed0f05839cfc3df5e423e
+==> ./configure --disable-osx-universal-binary --prefix=/Users/gugulethu/homebrew/Cellar/imagemagick/7.0.8-5 --disable-silent-rules --enable-shared --enable-static --with-modules --disable-opencl --disable-openmp --without-webp --without-openjp2 --without-gslib --with-gs-font-dir=/Users/gugulethu/homebrew/share/ghostscript/fonts --without-fftw --without-pango --without-x --with-freetype=yes --without-wmf
+==> make install
+🍺  /Users/gugulethu/homebrew/Cellar/imagemagick/7.0.8-5: 1,516 files, 23MB, built in 6 minutes 35 seconds
+Removing: /Users/gugulethu/homebrew/Cellar/node/10.5.0_1... (6,793 files, 59.9MB)
+Removing: /Users/gugulethu/homebrew/Cellar/imagemagick/7.0.8-3... (1,516 files, 23MB)
+==> This operation has freed approximately 82.9MB of disk space.
 Brew updates complete.
 
 Brew Cask
@@ -42,7 +65,7 @@ Already up-to-date.
 24/28  signal            1.13.0            1.13.0             Y   [   OK   ]  
 25/28  sketchup          2017              2017                   [   OK   ]  
 26/28  transmission      2.94              2.94               Y   [   OK   ]  
-27/28  vivaldi           1.15.1147.47      1.15.1147.47       Y   [   OK   ]  
+27/28  vivaldi           1.15.1147.52      1.15.1147.52       Y   [   OK   ]  
 28/28  ynab              4.3.855           4.3.855                [   OK   ]  
 ==> Removing cached downloads
 Nothing to do
@@ -50,11 +73,11 @@ Brew-cask updates complete.
 
 Node
 
-/Users/gugulethu/homebrew/bin/npm -> /Users/gugulethu/homebrew/lib/node_modules/npm/bin/npm-cli.js
 /Users/gugulethu/homebrew/bin/npx -> /Users/gugulethu/homebrew/lib/node_modules/npm/bin/npx-cli.js
+/Users/gugulethu/homebrew/bin/npm -> /Users/gugulethu/homebrew/lib/node_modules/npm/bin/npm-cli.js
 + npm@6.1.0
-updated 1 package in 18.261s
-up to date in 2.159s
+updated 1 package in 24.14s
+up to date in 1.874s
 found 0 vulnerabilities
 
 Node updates complete.
