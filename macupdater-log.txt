@@ -1,83 +1,19 @@
 macupdater 6.0
-Log:  Fri Jul 6 13:42:03 SAST 2018
+Log:  Sun Sep 23 01:04:58 SAST 2018
 
 
 Brew
 
-==> Upgrading 2 outdated packages, with result:
-node 10.5.0_1 -> 10.6.0, imagemagick 7.0.8-3 -> 7.0.8-5
-==> Upgrading node 
-==> Downloading https://nodejs.org/dist/v10.6.0/node-v10.6.0.tar.xz
-Already downloaded: /Users/gugulethu/Library/Caches/Homebrew/node-10.6.0.tar.xz
-==> ./configure --prefix=/Users/gugulethu/homebrew/Cellar/node/10.6.0 --without-npm --with-intl=system-icu
-==> make install
-==> Downloading https://registry.npmjs.org/npm/-/npm-6.1.0.tgz
-Already downloaded: /Users/gugulethu/Library/Caches/Homebrew/node--npm-6.1.0.tgz
-==> node /private/tmp/node-20180706-1571-nc3du8/node-v10.6.0/npm_bootstrap/bin/npm-cli.js install -ddd --global --prefix=/Users/gugulethu/homebrew/Cellar/node/10.6.0/libexec /Users/gugulethu/Library/Caches/Homebrew/node--npm-6.1.0.tgz
-==> Caveats
-Bash completion has been installed to:
-  /Users/gugulethu/homebrew/etc/bash_completion.d
-==> Summary
-🍺  /Users/gugulethu/homebrew/Cellar/node/10.6.0: 6,793 files, 59.9MB, built in 27 minutes 32 seconds
-==> Upgrading imagemagick 
-==> Downloading https://dl.bintray.com/homebrew/mirror/imagemagick-7.0.8-5.tar.xz
-==> Downloading from https://akamai.bintray.com/98/9889f7a95d34c75a46f9b5d890b8b9f8bfe6fa5e201ed0f05839cfc3df5e423e?__gda__=exp=1530879740~hmac=43e8e7e9ba2a58db544a485873e48a143f12e22e287976d2a818d3ecd4684731&response-content-disposition=attachment%3Bfilename%3D%22imagemagick-7.0.8-5.tar.xz%22&response-content-type=application%2Fx-xz&requestInfo=U2FsdGVkX18OanOn3GyOmdBkunbonwXOkqo2EGYAyzJgOpP5_xwoCq4wkIU_jXu_88C03TH9aj9m0Z0BFyrJ2WucIipMbEyZ58xXodkk6jwo4Hc-HgtmBrcnwbn9oXgvA5ZCDSttOgz5FA9GJ_aFuA&response-X-Checksum-Sha1=448d00a3e5cd5184d3df4883edc407e7885cf40c&response-X-Checksum-Sha2=9889f7a95d34c75a46f9b5d890b8b9f8bfe6fa5e201ed0f05839cfc3df5e423e
-==> ./configure --disable-osx-universal-binary --prefix=/Users/gugulethu/homebrew/Cellar/imagemagick/7.0.8-5 --disable-silent-rules --enable-shared --enable-static --with-modules --disable-opencl --disable-openmp --without-webp --without-openjp2 --without-gslib --with-gs-font-dir=/Users/gugulethu/homebrew/share/ghostscript/fonts --without-fftw --without-pango --without-x --with-freetype=yes --without-wmf
-==> make install
-🍺  /Users/gugulethu/homebrew/Cellar/imagemagick/7.0.8-5: 1,516 files, 23MB, built in 6 minutes 35 seconds
-Removing: /Users/gugulethu/homebrew/Cellar/node/10.5.0_1... (6,793 files, 59.9MB)
-Removing: /Users/gugulethu/homebrew/Cellar/imagemagick/7.0.8-3... (1,516 files, 23MB)
-==> This operation has freed approximately 82.9MB of disk space.
+Updated 1 tap (homebrew/cask).
 Brew updates complete.
-
-Brew Cask
-
-==> Options
-Include auto-update (-a): true
-Include latest (-f): false
-==> Updating Homebrew
-Already up-to-date.
-==> Finding outdated apps
-       Cask              Current           Latest            A/U    Result    
- 1/28  adapter           2.1.6             2.1.6                  [   OK   ]  
- 2/28  android-platf...  28.0.0            28.0.0                 [   OK   ]  
- 3/28  artpip            latest            latest                 [   OK   ]  
- 4/28  boom-3d           1.1.4,1527055860  1.1.4,1527055860       [   OK   ]  
- 5/28  brackets          1.13              1.13                   [   OK   ]  
- 6/28  carbon-copy-c...  5.1.2.5426        5.1.2.5426         Y   [   OK   ]  
- 7/28  cheatsheet        1.2.9             1.2.9                  [   OK   ]  
- 8/28  codekit           3.6.1,26680       3.6.1,26680        Y   [   OK   ]  
- 9/28  controlplane      1.6.6             1.6.6                  [   OK   ]  
-10/28  cyberduck         6.6.2.28219       6.6.2.28219        Y   [   OK   ]  
-11/28  disk-drill        3.5.890           3.5.890                [   OK   ]  
-12/28  flux              39.987            39.987             Y   [   OK   ]  
-13/28  fork              1.0.67.5          1.0.67.5           Y   [   OK   ]  
-14/28  iina              0.0.15.1          0.0.15.1           Y   [   OK   ]  
-15/28  itsycal           0.11.10           0.11.10                [   OK   ]  
-16/28  knockknock        1.9.3             1.9.3                  [   OK   ]  
-17/28  libreoffice       6.0.5             6.0.5                  [   OK   ]  
-18/28  platypus          5.2               5.2                Y   [   OK   ]  
-19/28  qlcolorcode       2.1.0             2.1.0                  [   OK   ]  
-20/28  qlmarkdown        1.3.5             1.3.5                  [   OK   ]  
-21/28  qlprettypatch     1.0               1.0                    [   OK   ]  
-22/28  qlstephen         1.4.4             1.4.4                  [   OK   ]  
-23/28  quicksilver       1.5.9             1.5.9              Y   [   OK   ]  
-24/28  signal            1.13.0            1.13.0             Y   [   OK   ]  
-25/28  sketchup          2017              2017                   [   OK   ]  
-26/28  transmission      2.94              2.94               Y   [   OK   ]  
-27/28  vivaldi           1.15.1147.52      1.15.1147.52       Y   [   OK   ]  
-28/28  ynab              4.3.855           4.3.855                [   OK   ]  
-==> Removing cached downloads
-Nothing to do
-Brew-cask updates complete.
 
 Node
 
-/Users/gugulethu/homebrew/bin/npx -> /Users/gugulethu/homebrew/lib/node_modules/npm/bin/npx-cli.js
 /Users/gugulethu/homebrew/bin/npm -> /Users/gugulethu/homebrew/lib/node_modules/npm/bin/npm-cli.js
-+ npm@6.1.0
-updated 1 package in 24.14s
-up to date in 1.874s
+/Users/gugulethu/homebrew/bin/npx -> /Users/gugulethu/homebrew/lib/node_modules/npm/bin/npx-cli.js
++ npm@6.4.1
+updated 1 package in 13.285s
+up to date in 2.621s
 found 0 vulnerabilities
 
 Node updates complete.
@@ -106,10 +42,7 @@ Software Update Tool
 Finding available software
 macOS updates complete.
 
-Apps
 
-Everything is up-to-date
-Apps updates complete.
 
 
 All updates complete. END

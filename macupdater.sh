@@ -1,6 +1,6 @@
 #!/bin/sh
 # This script updates brew, brew cask apps, ruby gems, rvm, npm packages and macOS (including system software) Apps.
-# Version 6.0 (30 June, 2018)
+# Version 6.3 (23 September, 2018)
 
 # Function: Reviews the last command for errors. Then prints update complete to log or shows error dialog. Takes section variable.
 catcher () {
@@ -22,39 +22,41 @@ printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' - >> ~/Projects/Programmin
 { echo "macupdater 6.0"; echo "Log: " `date`; line; } > ~/Projects/Programming/macupdater/macupdater-log.txt
 
 # Brew update commands.
-{ echo "Brew"; echo ""; brew update; brew upgrade; brew cleanup; brew prune; } >> ~/Projects/Programming/macupdater/macupdater-log.txt
+{ echo "Brew"; echo ""; brew update; brew bundle dump --force; brew bundle -verbose; brew cleanup; brew prune; } >> ~/Projects/Programming/macupdater/macupdater-log.txt
 catcher Brew
 line
 
-# Brew-cask update commands.
-{ echo "Brew Cask"; echo ""; brew cu -ay --cleanup; brew cask cleanup; } >> ~/Projects/Programming/macupdater/macupdater-log.txt
-catcher Brew-cask
-line
+# Brew-cask update commands. Functionality replaced by brew bundle.
+# { echo "Brew Cask"; echo ""; brew cu -ay --cleanup; brew cask cleanup; } >> ~/Projects/Programming/macupdater/macupdater-log.txt
+# catcher Brew-cask
+# line
+
+# App Store update commands. Functionality replaced by brew bundle.
+# { echo "Apps"; echo ""; mas upgrade; } >> ~/Projects/Programming/macupdater/macupdater-log.txt
+# catcher Apps
 
 # Node update commands.
 { echo "Node"; echo ""; npm install npm@latest -g --silent; npm update --silent; npm prune --silent; } >> ~/Projects/Programming/macupdater/macupdater-log.txt
 catcher Node
 line
 
-# Ruby update commands. Commented out RVM update.
+# Ruby update commands. Commented out RVM update (takes too long and not necessary).
 # { rvm get latest; } >> ~/Projects/Programming/macupdater/macupdater-log.txt
-{ echo "Ruby"; echo ""; rvm cleanup all; gem update --system; gem update; gem cleanup; } >> ~/Projects/Programming/macupdater/macupdater-log.txt
+# rvm cleanup all (don't need this for now)
+{ echo "Ruby"; echo ""; ; gem update --system; gem update; gem cleanup; } >> ~/Projects/Programming/macupdater/macupdater-log.txt
 catcher Ruby
 line
 
-# Perl update commands.
-{ echo "Perl"; echo ""; perlbrew upgrade-perl; perlbrew self-upgrade --silent; perlbrew clean; } >> ~/Projects/Programming/macupdater/macupdater-log.txt
-catcher Perl
-line
+# Perl update commands. Commented out (don;t need uopdated Perl at the moment)
+# { echo "Perl"; echo ""; perlbrew upgrade-perl; perlbrew self-upgrade --silent; perlbrew clean; } >> ~/Projects/Programming/macupdater/macupdater-log.txt
+# catcher Perl
+# line
 
 # System software update commads.
 { echo "macOS"; echo ""; softwareupdate -ia; } >> ~/Projects/Programming/macupdater/macupdater-log.txt
 catcher macOS
 line
 
-# App Store update commands.
-{ echo "Apps"; echo ""; mas upgrade; } >> ~/Projects/Programming/macupdater/macupdater-log.txt
-catcher Apps
 
 echo "" >> ~/Projects/Programming/macupdater/macupdater-log.txt
 line
