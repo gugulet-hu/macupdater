@@ -1,6 +1,9 @@
-#!/bin/sh
-# This script updates brew, brew cask apps, ruby gems, rvm, npm packages and macOS (including system software) Apps.
-# Version 6.3 (23 September, 2018)
+#!/Users/gugulethu/brew/bin/zsh
+
+# This script updates brew, brew cask apps, apm packages, ruby gems, rvm, npm packages and macOS (including system software) Apps.
+# Version 6.5 (6 October, 2018)
+
+osascript -e 'display notification "Updater starting..." with title "MacUpdater"'
 
 # Function: Reviews the last command for errors. Then prints update complete to log or shows error dialog. Takes section variable.
 catcher () {
@@ -8,7 +11,7 @@ if [ "$?" = "0" ]; then
     printf "$1 updates complete." >> ~/Projects/Programming/macupdater/macupdater-log.txt # If no error, print update complete to file.
     printf "" >> ~/Projects/Programming/macupdater/macupdater-log.txt # Add a line to file.
 else # If error, show a dialog stating the section where the error occured.
-    osascript -e 'display notification "'$1': Script encountered errors." with title "MacUpdater"' 
+    osascript -e 'display notification "'$1': Script encountered errors." with title "MacUpdater"'
 fi
 }
 
@@ -47,6 +50,11 @@ line
 catcher Ruby
 line
 
+# Atom update commands.
+{ echo "Atom"; echo ""; apm update; apm upgrade; apm prune; } >> ~/Projects/Programming/macupdater/macupdater-log.txt
+catcher Atom
+line
+
 # Perl update commands. Commented out (don;t need uopdated Perl at the moment)
 # { echo "Perl"; echo ""; perlbrew upgrade-perl; perlbrew self-upgrade --silent; perlbrew clean; } >> ~/Projects/Programming/macupdater/macupdater-log.txt
 # catcher Perl
@@ -63,4 +71,6 @@ line
 
 # Prints and shows dialog box confirming all updates are done.
 printf "All updates complete. END" >> ~/Projects/Programming/macupdater/macupdater-log.txt
-osascript -e 'display notification "All updates completed." with title "MacUpdater"' 
+osascript -e 'display notification "All updates completed." with title "MacUpdater"'
+
+exit 0

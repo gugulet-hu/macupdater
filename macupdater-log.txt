@@ -1,48 +1,130 @@
 macupdater 6.0
-Log:  Sun Sep 23 01:04:58 SAST 2018
+Log:  Sat Oct 6 13:26:11 SAST 2018
 
-
+-------------------------------------------------------------------------------------
 Brew
 
-Updated 1 tap (homebrew/cask).
-Brew updates complete.
-
-Node
-
-/Users/gugulethu/homebrew/bin/npm -> /Users/gugulethu/homebrew/lib/node_modules/npm/bin/npm-cli.js
-/Users/gugulethu/homebrew/bin/npx -> /Users/gugulethu/homebrew/lib/node_modules/npm/bin/npx-cli.js
-+ npm@6.4.1
-updated 1 package in 13.285s
-up to date in 2.621s
-found 0 vulnerabilities
-
-Node updates complete.
-
-Ruby
-
-Updating rubygems-update
-Updating installed gems
-Updating CFPropertyList
-Cleaning up installed gems...
-Clean Up Complete
-Ruby updates complete.
-
-Perl
-
-no perlbrew environment is currently in use
-Your perlbrew is up-to-date.
-
-Done
-Perl updates complete.
-
-macOS
-
-Software Update Tool
-
-Finding available software
-macOS updates complete.
-
-
-
-
-All updates complete. END
+Already up-to-date.
+Skipping install of buo/cask-upgrade tap. It is already installed.
+Using buo/cask-upgrade
+Skipping install of homebrew/bundle tap. It is already installed.
+Using homebrew/bundle
+Skipping install of homebrew/cask tap. It is already installed.
+Using homebrew/cask
+Skipping install of homebrew/cask-fonts tap. It is already installed.
+Using homebrew/cask-fonts
+Skipping install of homebrew/cask-versions tap. It is already installed.
+Using homebrew/cask-versions
+Skipping install of homebrew/core tap. It is already installed.
+Using homebrew/core
+Skipping install of openssl formula. It is already up-to-date.
+Using openssl
+Skipping install of bash formula. It is already up-to-date.
+Using bash
+Skipping install of bash-completion formula. It is already up-to-date.
+Using bash-completion
+Skipping install of bash-git-prompt formula. It is already up-to-date.
+Using bash-git-prompt
+Skipping install of coreutils formula. It is already up-to-date.
+Using coreutils
+Skipping install of curl formula. It is already up-to-date.
+Using curl
+Skipping install of ffmpeg formula. It is already up-to-date.
+Using ffmpeg
+Skipping install of freetype formula. It is already up-to-date.
+Using freetype
+Skipping install of git formula. It is already up-to-date.
+Using git
+Skipping install of gnupg formula. It is already up-to-date.
+Using gnupg
+Skipping install of imagemagick formula. It is already up-to-date.
+Using imagemagick
+Skipping install of mackup formula. It is already up-to-date.
+Using mackup
+Skipping install of make formula. It is already up-to-date.
+Using make
+Skipping install of mas formula. It is already up-to-date.
+Using mas
+Skipping install of nmap formula. It is already up-to-date.
+Using nmap
+Skipping install of node formula. It is already up-to-date.
+Using node
+Skipping install of openvpn formula. It is already up-to-date.
+Using openvpn
+Skipping install of rsync formula. It is already up-to-date.
+Using rsync
+Skipping install of sphinx-doc formula. It is already up-to-date.
+Using sphinx-doc
+Skipping install of trash formula. It is already up-to-date.
+Using trash
+Skipping install of tree formula. It is already up-to-date.
+Using tree
+Skipping install of wget formula. It is already up-to-date.
+Using wget
+Skipping install of wp-cli formula. It is already up-to-date.
+Using wp-cli
+Skipping install of youtube-dl formula. It is already up-to-date.
+Using youtube-dl
+Skipping install of zsh formula. It is already up-to-date.
+Using zsh
+Skipping install of zsh-completions formula. It is already up-to-date.
+Using zsh-completions
+Skipping install of zsh-git-prompt formula. It is already up-to-date.
+Using zsh-git-prompt
+Skipping install of zsh-syntax-highlighting formula. It is already up-to-date.
+Using zsh-syntax-highlighting
+Using adapter
+Using android-platform-tools
+Using artpip
+Using atom
+Using boom-3d
+Using carbon-copy-cloner
+Using cheatsheet
+Using codekit
+Using controlplane
+Using cyberduck
+Using darktable
+Using disk-drill
+Using flux
+Using font-abel
+Using font-aboriginal-sans
+Using font-aboriginal-serif
+Using font-african-sans
+Using font-african-serif
+Using font-anonymice-powerline
+Using font-input
+Using font-inter-ui
+Using fork
+Using hazel3
+Using horndis
+Using iina
+Using iterm2-nightly
+Using itsycal
+Using knockknock
+Using libreoffice
+Using pdf-expert
+Using platypus
+Using qlcolorcode
+Using qlmarkdown
+Using qlprettypatch
+Using qlstephen
+Using quicksilver
+Using signal
+Using sketchup
+Using soduto
+Using transmission
+Using vivaldi
+Using ynab
+Using Affinity Designer
+Using Affinity Photo
+Using Amphetamine
+Using DaVinci Resolve
+Using GarageBand
+Using GIF Brewery 3
+Using GIPHY CAPTURE
+Using InfoSlips Viewer
+Using Keynote
+Using Pages
+Using TokenLock
+Using Xcode
+Homebrew Bundle complete! 88 Brewfile dependencies now installed.
