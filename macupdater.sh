@@ -1,20 +1,22 @@
 #!/Users/gugulethu/brew/bin/zsh
 
 # This script updates brew, brew cask apps, atom packages, ruby gems, node packages and macOS (including system software) Apps.
-# Version 8.0 (19 April, 2019)
+# Version 9.0 (26 October 2019)
 
 # The below are Platypus features for managing UI
 echo "PROGRESS:0" # Show the progress bar at 0%
 echo "Script starting" # Show this message above the progress bar
 
 # Set the path to the log file
-export LOG="/Users/gugulethu/Projects/Programming/push/macupdater/macupdater-log.txt"
+export LOG=~/Projects/Programming/push/macupdater/macupdater-log.txt
 
 echo "NOTIFICATION:Updater starting..." # Send a notification (with logo)
 
 # Export paths for appification.
-export PATH="/Users/gugulethu/brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/$"
-export PATH="/Users/gugulethu/brew/sbin:$PATH"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/$"
+
+# Clear the brew cache
+trash -rf $(brew --cache)
 
 # Function: Reviews the last command for errors. Then prints update complete to log or shows error dialog. Takes section variable.
 catcher () {
@@ -43,14 +45,6 @@ line
 echo "PROGRESS:10" # Show the progress bar at 10%
 echo "Brew updates complete" # Show this message above the progress bar
 
-# Brew-cask update commands.
-{ echo "Brew Cask"; echo ""; brew cu -ayf --cleanup; } >> $LOG
-catcher Brew-cask
-line
-
-echo "PROGRESS:20" # Show the progress bar at 20%
-echo "Brew cask updates complete" # Show this message above the progress bar
-
 # App Store update commands.
 { echo "Apps"; echo ""; mas upgrade; } >> $LOG
 catcher Apps
@@ -67,19 +61,9 @@ echo "PROGRESS:40" # Show the progress bar at 40%
 echo "Node package updates complete" # Show this message above the progress bar
 
 # Ruby update commands. Commented out all as they only work in admin.
-# { rvm get latest; } >> $LOG
-# rvm cleanup all (don't need this for now)
-# { echo "Ruby"; echo ""; gem update --system; gem update; gem cleanup; } >> $LOG
-# catcher Ruby
-# line
-
-# Atom update commands.
-{ echo "Atom"; echo ""; apm update; apm upgrade; apm prune; } >> $LOG
-catcher Atom
+{ echo "Ruby"; echo ""; gem update --system; gem update; gem cleanup; } >> $LOG
+catcher Ruby
 line
-
-echo "PROGRESS:50" # Show the progress bar at 50%
-echo "Atom package updates complete" # Show this message above the progress bar
 
 # Perl update commands. Commented out (don't need updated Perl at the moment)
 # { echo "Perl"; echo ""; perlbrew upgrade-perl; perlbrew self-upgrade --silent; perlbrew clean; } >> $LOG
@@ -94,17 +78,25 @@ line
 echo "PROGRESS:60" # Show the progress bar at 60%
 echo "macOS updates complete" # Show this message above the progress bar
 
-echo "NOTIFICATION:All local updates complete."
+# Brew-cask update commands.
+{ echo "Brew Cask"; echo ""; brew cu -ayf --cleanup; } >> $LOG
+catcher Brew-cask
+line
 
 echo "PROGRESS:70" # Show the progress bar at 70%
+echo "Brew cask updates complete" # Show this message above the progress bar
+
+echo "NOTIFICATION:All local updates complete."
+
+echo "PROGRESS:90" # Show the progress bar at 90%
 echo "Local updates complete" # Show this message above the progress bar
 
 # Sets the password variable for the admin account
-PASSWD="$(osascript -e 'text returned of (display dialog "Please enter a password to continue" default answer "" with icon stop buttons {"Cancel", "Continue"} default button "Continue" with hidden answer)')"
+# PASSWD="$(osascript -e 'text returned of (display dialog "Please enter a password to continue" default answer "" with icon stop buttons {"Cancel", "Continue"} default button "Continue" with hidden answer)')"
 
 # An expect script to log into the admin account and run brew updates
-/usr/bin/expect -c "spawn login; expect \"Login:\"; send \"mlungisi\r\"; expect \"Password:\"; send \"$PASSWD\r\"; expect \"g:~ mlungisi$\"; send \"{ gem update --system; gem update; gem cleanup; brew update; brew upgrade; brew cleanup; brew cu -ayf --cleanup; }\r\"; expect eof; end"
-catcher Admin
+# /usr/bin/expect -c "spawn login; expect \"Login:\"; send \"mlungisi\r\"; expect \"Password:\"; send \"$PASSWD\r\"; expect \"g:~ mlungisi$\"; send \"{ brew update; brew upgrade; brew cleanup; brew cu -ayf --cleanup; }\r\"; expect eof; end"
+# catcher Admin
 
 echo "" >> $LOG
 line
