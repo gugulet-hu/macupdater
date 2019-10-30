@@ -1,7 +1,7 @@
 #!/Users/gugulethu/brew/bin/zsh
 
 # This script updates brew, brew cask apps, atom packages, ruby gems, node packages and macOS (including system software) Apps.
-# Version 9.0 (26 October 2019)
+# Version 9.1 (30 October 2019)
 
 # The below are Platypus features for managing UI
 echo "PROGRESS:0" # Show the progress bar at 0%
@@ -35,7 +35,7 @@ printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' - >> $LOG # Prints line
 }
 
 # Writes the header for the log file: Program, Version number, Date and Line.
-{ echo "macupdater 6.0"; echo "Log: " `date`; line; } > $LOG
+{ echo "macupdater 9.1"; echo "Log: " `date`; line; } > $LOG
 
 # Brew update commands.
 { echo "Brew"; echo ""; brew update; brew upgrade; brew cleanup; } >> $LOG
@@ -49,7 +49,7 @@ echo "Brew updates complete" # Show this message above the progress bar
 { echo "Apps"; echo ""; mas upgrade; } >> $LOG
 catcher Apps
 
-echo "PROGRESS:30" # Show the progress bar at 60%
+echo "PROGRESS:30" # Show the progress bar at 30%
 echo "Mac app store updates complete" # Show this message above the progress bar
 
 # Node update commands.
@@ -86,10 +86,14 @@ line
 echo "PROGRESS:70" # Show the progress bar at 70%
 echo "Brew cask updates complete" # Show this message above the progress bar
 
-echo "NOTIFICATION:All local updates complete."
+# echo "NOTIFICATION:All local updates complete."
 
+{ cd Projects/Programming/push/ find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} push \; cd Projects/Programming/push/; find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \; } >> $LOG
+catcher Git-remote
+line
 echo "PROGRESS:90" # Show the progress bar at 90%
-echo "Local updates complete" # Show this message above the progress bar
+
+# echo "Local updates complete" # Show this message above the progress bar
 
 # Sets the password variable for the admin account
 # PASSWD="$(osascript -e 'text returned of (display dialog "Please enter a password to continue" default answer "" with icon stop buttons {"Cancel", "Continue"} default button "Continue" with hidden answer)')"
