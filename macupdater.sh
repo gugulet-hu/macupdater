@@ -88,7 +88,7 @@ echo "Brew cask updates complete" # Show this message above the progress bar
 
 # echo "NOTIFICATION:All local updates complete."
 
-{ cd Projects/Programming/push/ find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} push \; cd Projects/Programming/push/; find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \; } >> $LOG
+{ cd Projects/Programming/push/ find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} push \; cd Projects/Programming/pull/; find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \; } >> $LOG
 catcher Git-remote
 line
 echo "PROGRESS:90" # Show the progress bar at 90%
