@@ -8,6 +8,16 @@ Package managment on macOS is a challenge. This is my amateurish attempt to comb
 
 This app relies on [alerter](https://github.com/vjeantet/alerter) for its notifications, so install that before you get started.
 
+## Packages supported
+
+-    [Brew](https://brew.sh/)
+-    [Brew Casks](https://github.com/buo/homebrew-cask-upgrade)
+-    [npm](https://www.npmjs.com/)
+-    Ruby
+-    Python [(pip)](https://github.com/pypa/pip)
+-    [mas](https://github.com/mas-cli/mas)
+-    macOS software updates
+
 ## Editing the script
 
 Editing the script requires some scripting know how, but it is documented. Here's a quick guide on how to customise it for your needs.
