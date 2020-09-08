@@ -70,7 +70,7 @@ line
 
 ### Creating the app
 
-I use [Platypus][https://github.com/sveinbjornt/platypus] to convert the script into an application for macOS. You are welcome to run this purely as a shell script. This is very much a work in progress, so feel free to tinker.
+I use [Platypus](https://github.com/sveinbjornt/platypus) to convert the script into an application for macOS. You are welcome to run this purely as a shell script. This is very much a work in progress, so feel free to tinker.
 
 ### Problems
 
