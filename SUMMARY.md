@@ -1,11 +1,20 @@
 # Table of contents
 
-* [yrty](README.md)
+* [Introduction](README.md)
 * [Home](home.md)
 * [Pre-install](pre-install.md)
-* [Variables](variables.md)
-* [Functions](functions.md)
-* [Modules](modules.md)
+
+## Preamble
+
+* [Variables](preamble/variables.md)
+* [Functions](preamble/functions.md)
+
+## Modules <a id="modules-1"></a>
+
+* [Modules](modules-1/modules.md)
+
+---
+
 * [Create app](create-app.md)
 * [Issues](issues.md)
 * [License](license-text.md)

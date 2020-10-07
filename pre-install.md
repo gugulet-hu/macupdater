@@ -1,5 +1,5 @@
 ---
-description: What you need to do before running the app
+description: What you need to do before running or editing the app
 ---
 
 # Pre-install
@@ -82,9 +82,17 @@ Enter the below in your terminal app after you have installed [**homebrew**](pre
 brew install mas
 ```
 
+### Install Atom Package Manager
 
+{% hint style="info" %}
+apm is a package manage to update and manage packages for the Atom code editor.
+{% endhint %}
 
+apm is automatically installed when you install the Atom code editor. Enter the below in your terminal app to install the Atom editor after you have installed [**homebrew**](pre-install.md#install-homebrew).
 
+```text
+brew cask install atom
+```
 
 
 
