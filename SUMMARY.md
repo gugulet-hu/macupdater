@@ -8,5 +8,5 @@
 * [Modules](modules.md)
 * [Create app](create-app.md)
 * [Issues](issues.md)
-* [License](license.md)
+* [License](license-text.md)
 
