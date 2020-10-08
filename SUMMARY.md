@@ -6,7 +6,7 @@
 
 ## Preamble
 
-* [Variables](preamble/variables.md)
+* [Variables and Sudo](preamble/variables.md)
 * [Functions](preamble/functions.md)
 
 ## Modules <a id="modules-1"></a>

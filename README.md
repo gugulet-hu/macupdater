@@ -5,9 +5,9 @@
   
 ​[​​![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)​](https://opensource.org/licenses/MIT)​‌
 
-Package management on macOS is a challenge. This is my amateurish attempt to combine all my package updates into one app. This app updates brew, brew cask apps, apm packages, ruby gems, rvm, npm packages and macOS \(including system software\) Apps. Note: the app currently only runs in admin account as it needs admin privileges.
+Package management on macOS is a challenge. This app updates brew, brew cask apps, apm packages, ruby gems, rvm, npm packages and macOS \(including system software\) Apps all in one application. This guide will help you edit the app to add or remove update modules and to customise the app for your needs.
 
-## Packages supported
+## Package managers currently supported
 
 * [Brew](https://brew.sh/)
 * [Brew Casks](https://github.com/buo/homebrew-cask-upgrade)
