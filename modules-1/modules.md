@@ -5,7 +5,9 @@ description: The Homebrew update module
 # Brew
 
 {% hint style="info" %}
-Homebrew is a package manager for command-line interface packages and applications on macOS. Find out how to install the package manager [**here**](../pre-install.md#install-homebrew-brew).
+Homebrew is a package manager for command-line interface packages and applications on macOS. 
+
+Find out how to install the package manager [**here**](../pre-install.md#install-homebrew-brew).
 {% endhint %}
 
 ### Understanding the update command
@@ -24,5 +26,9 @@ catcher Brew
 line
 ```
 
-To add different options to the module read the [**Homebrew documentation**](https://docs.brew.sh/). To disable this module comment out this code above.
+To add different options to the module read the [**Homebrew documentation**](https://docs.brew.sh/). To disable this module comment out the code above.
+
+{% hint style="danger" %}
+Brew updates will fail if the user running them does not have admin privileges. This app requires that you run it as an administrator.
+{% endhint %}
 

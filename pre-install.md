@@ -88,10 +88,11 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 mas is a command-line interface for the Mac App Store. It allows you to manage application updates from the terminal.
 {% endhint %}
 
-Enter the below in your Terminal app after you have installed [**homebrew**](pre-install.md#install-homebrew).
+Enter the below in your Terminal app after you have installed [**homebrew**](pre-install.md#install-homebrew). Make sure that you sign into your App Store account to enable updates.
 
 ```text
 brew install mas
+mas signin your/apple/id/email/address
 ```
 
 ### Install Atom Package Manager

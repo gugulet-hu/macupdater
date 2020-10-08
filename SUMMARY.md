@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Home](home.md)
 * [Pre-install](pre-install.md)
 
 ## Preamble
@@ -15,11 +14,10 @@
 * [Brew](modules-1/modules.md)
 * [Brew cask](modules-1/brew-cask.md)
 * [npm](modules-1/npm.md)
-* [Ruby gems](modules-1/ruby-gems.md)
+* [RubyGems](modules-1/ruby-gems.md)
 * [Python pip](modules-1/python-pip.md)
 * [mas](modules-1/mas.md)
 * [macOS updates](modules-1/macos-updates.md)
-* [Git](modules-1/git.md)
 
 ---
 

@@ -1,13 +1,13 @@
 ---
-description: The Homebrew cask upgrade module
+description: The Homebrew cask update module
 ---
 
 # Brew cask
 
-
-
 {% hint style="info" %}
-This extension of Homebrew allows you to update macOS applications installed using Homebrew. Find out how to install the package manager [**here**](../pre-install.md#install-homebrew-cask-upgrade-brew-cu).
+This extension of Homebrew allows you to update macOS applications installed using Homebrew. 
+
+Find out how to install the package manager [**here**](../pre-install.md#install-homebrew-cask-upgrade-brew-cu).
 {% endhint %}
 
 ### Understanding the update command
@@ -27,5 +27,5 @@ catcher Brew-cask
 line
 ```
 
-To add different options to the module read the [**Homebrew cask documentation**](https://github.com/buo/homebrew-cask-upgrade). To disable this module comment out this code above.
+To add different options to the module read the [**Homebrew cask documentation**](https://github.com/buo/homebrew-cask-upgrade). To disable this module comment out the code above.
 
