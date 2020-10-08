@@ -20,7 +20,7 @@ To install alerter follow the instructions posted in the readme file [**in their
 Homebrew is a package manager for command-line interface packages and applications on macOS. 
 {% endhint %}
 
-Enter the below in your terminal app \(found in the Utilities folder\) to install it.
+Enter the below in your Terminal app \(found in the Utilities folder\) to install it.
 
 ```text
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -32,10 +32,22 @@ Enter the below in your terminal app \(found in the Utilities folder\) to instal
 This extension of homebrew allows you to update applications installed using homebrew.
 {% endhint %}
 
-Enter the below in your terminal app after you have installed [**homebrew**](pre-install.md#install-homebrew).
+Enter the below in your Terminal app after you have installed [**homebrew**](pre-install.md#install-homebrew).
 
 ```text
 brew tap buo/cask-upgrade
+```
+
+### Install git
+
+{% hint style="info" %}
+Git is a version control system.
+{% endhint %}
+
+Enter the below in your Terminal app after you have installed [**homebrew**](pre-install.md#install-homebrew).
+
+```text
+brew install git
 ```
 
 ### Install Node Package Manager \(npm\)
@@ -44,7 +56,7 @@ brew tap buo/cask-upgrade
 Node package manager is the default package manager for JavaScript.
 {% endhint %}
 
-NPM is automatically installed when you install the node runtime. First ensure you have already installed [**homebrew**](pre-install.md#install-homebrew-brew). Enter the below in your terminal app to install node.
+NPM is automatically installed when you install the node runtime. First ensure you have already installed [**homebrew**](pre-install.md#install-homebrew-brew). Enter the below in your Terminal app to install node.
 
 ```text
 brew install node
@@ -64,7 +76,7 @@ Ruby gems is preinstalled on macOS, so you won't have to install it.
 Pip is the package manager for python on macOS.
 {% endhint %}
 
-Enter the below in your terminal app to install pip.
+Enter the below in your Terminal app to install pip.
 
 ```text
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
@@ -76,7 +88,7 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 mas is a command-line interface for the Mac App Store. It allows you to manage application updates from the terminal.
 {% endhint %}
 
-Enter the below in your terminal app after you have installed [**homebrew**](pre-install.md#install-homebrew).
+Enter the below in your Terminal app after you have installed [**homebrew**](pre-install.md#install-homebrew).
 
 ```text
 brew install mas
@@ -88,7 +100,7 @@ brew install mas
 apm is a package manage to update and manage packages for the Atom code editor.
 {% endhint %}
 
-apm is automatically installed when you install the Atom code editor. Enter the below in your terminal app to install the Atom editor after you have installed [**homebrew**](pre-install.md#install-homebrew).
+apm is automatically installed when you install the Atom code editor. Enter the below in your Terminal app to install the Atom editor after you have installed [**homebrew**](pre-install.md#install-homebrew).
 
 ```text
 brew cask install atom
