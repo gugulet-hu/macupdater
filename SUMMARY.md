@@ -11,7 +11,7 @@
 
 ## Modules <a id="modules-1"></a>
 
-* [Modules](modules-1/modules.md)
+* [Brew](modules-1/modules.md)
 
 ---
 
