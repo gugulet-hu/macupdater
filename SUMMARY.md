@@ -11,6 +11,7 @@
 
 ## Modules <a id="modules-1"></a>
 
+* [Adding a module](modules-1/adding-a-module.md)
 * [Brew](modules-1/modules.md)
 * [Brew cask](modules-1/brew-cask.md)
 * [npm](modules-1/npm.md)
