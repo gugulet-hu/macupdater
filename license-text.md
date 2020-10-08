@@ -4,7 +4,7 @@ description: The license governing this project
 
 # License
 
-MIT License
+## MIT License
 
 Copyright \(c\) 2020 g\*
 

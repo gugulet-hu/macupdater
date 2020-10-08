@@ -29,7 +29,7 @@ Enter the below in your Terminal app \(found in the Utilities folder\) to instal
 ### Install Homebrew cask upgrade \(brew cu\)
 
 {% hint style="info" %}
-This extension of homebrew allows you to update applications installed using homebrew.
+This extension of Homebrew allows you to update macOS applications installed using Homebrew.
 {% endhint %}
 
 Enter the below in your Terminal app after you have installed [**homebrew**](pre-install.md#install-homebrew).
