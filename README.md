@@ -17,5 +17,5 @@ Package management on macOS is a challenge. This app updates brew, brew cask app
 * [mas](https://github.com/mas-cli/mas)
 * macOS software updates
 
-Get full documentation [here](https://dev.gugulet.hu).
+Get full documentation [here](https://docs.gugulet.hu).
 
